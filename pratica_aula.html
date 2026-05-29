@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página - Fontes, mapa e vídeos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Minha Página</h1>
+        <p>Fontes, mapa e vídeos</p>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Sobre o local</h2>
+            <p>Esse texto usa a fonte <strong>Roboto</strong>, importada do Google Fonts. Fontes externas deixam o site com uma aparência mais profissional.</p>
+            <p>Você pode combinar várias fontes: uma para títulos e outra para o corpo do texto.</p>
+        </section>
+
+        <section>
+            <h2>Localização</h2>
+            <p>Encontre-nos no mapa abaixo:</p>
+            <div class="mapa-container">
+                <iframe src="https://www.google.com/maps?q=-23.5613,-46.6562&hl=pt-BR&z=14&output=embed"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Mapa da localização">
+                </iframe>
+            </div>
+        </section>
+
+        <section>
+            <h2>Vídeo</h2>
+            <div class="video-container">
+                <video controls loop poster="imagens/capa.jpg">
+                    <source src="video/videoplayback.mp4" type="video/mp4">
+                    <source src="video/videoplayback.mp4" type="video/webm">
+                    Seu navegador não suporta a reprodução de video.
+                </video>
+            </div>
+            <p class="video-info">
+                Formatos suportados: MP4 (recomendado), WebM, OGG
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Aula de Frontend &mdash; Fontes, Mapas e Vídeos</p>
+    </footer>
+
+</body>
+</html>
